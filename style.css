@@ -1,0 +1,260 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+iframe {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.container {
+    max-width: 375px;
+    margin: 0px auto;
+    padding: 30px;
+    background: url(bg.png) no-repeat 50% 50% fixed;
+    background-size: cover;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 30%;
+    left: 0;
+    overflow: auto;
+	text-align: center;
+	z-index: 800;
+}
+
+.modal::before {
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.modal-overlay {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+	background-color: rgba(45, 50, 56, 0.9);
+}
+
+.modal-inner {
+    width: 95%;
+    max-width: 355px;
+    position: relative;
+    z-index: 500;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.modal-content {
+	background-color: #FFF;
+    border-radius: 18px;
+}
+
+.modal-close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 24px;
+	height: 24px;
+	background: url(close.svg) no-repeat;
+	cursor: pointer;
+}
+
+.modal-icon {
+	display: inline-block;
+}
+
+.modal-title {
+	margin-bottom: 8px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.modal-buttons {
+	margin: 25px -6px 0;
+}
+
+.btn {
+	display: inline-block;
+	border-radius: 10px;
+    text-decoration: none;
+}
+
+
+.btn-danger {
+	color: #ffffff;
+	background-color: #E64646;
+}
+
+.button {
+    box-sizing: border-box;
+}
+
+.btn-danger {
+    width: 80%;
+    font-size: 17px;
+    line-height: 45px;
+}
+
+.modal-description {
+	line-height: 18px;
+	color: #4d4d4d;
+	letter-spacing: 0.15px;
+}
+
+.identification {
+	padding: 48px 18px 25px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.marker {
+    background: linear-gradient(101.42deg, #FF0099 -9.14%, #AD1CD1 106.21%);
+    border-radius: 6px;
+    padding: 0 3px;
+}
+
+.profile {
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 20px;
+    max-width: 100%;
+    margin: 0px auto;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+}
+.preview {
+    max-width: 100%;
+    position: relative;
+}
+
+.photo {
+    border-radius: 20px;
+    max-width: 100%;
+    height: 256px;
+    background: url(load_image.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.message {
+    position: absolute;
+    padding: 12px 8px;
+    background: rgba(53, 37, 49, 0.7);
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFFFFF;
+    display: inline-block; 
+}
+
+.friends-list {
+    border-radius: 10px 0px 0px 10px;
+    text-align: right;
+    bottom: 70px;
+    right: 0;
+}
+
+.actual-photo {
+    border-radius: 0px 10px 10px 0px;
+    bottom: 30px;
+    left: 0;
+}
+
+.info h4 {
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 0;
+    margin-left: 26px;
+    color: #FFFFFF;
+}
+
+.desc {
+    font-size: 15px;
+    line-height: 19px;
+    margin-left: 26px;
+    color: #FFFFFF;
+    margin-top: 6px;
+}
+
+.info-content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.plate {
+    display: inline-block;
+    padding: 10px 24px;
+    background: rgba(53, 37, 49, 0.2);
+    border-radius: 8px;
+    max-width: 120px;
+}
+
+.plate:first-child {
+    margin-right: 14px;
+}
+
+.desc-content {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons a {
+    font-size: 16px;
+    display: inline-block;
+    padding: 20px 0;
+    width: 100%;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.show-more {
+    background: linear-gradient(92.96deg, #7613C3 0%, #8013C3 0.01%, #EF1ACD 100%);
+}
+
+.del {
+    margin-top: 12px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.del:after {
+    content: "\A(для владельца)";
+    white-space: pre;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+@media (max-width: 325px) {
+    .plate {
+        padding: 6px 18px;
+    }
+
+    .plate:first-child {
+        margin-right: 10px;
+    }
+}
